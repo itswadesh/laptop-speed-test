@@ -7,7 +7,7 @@ var responseTime = require('response-time')
 app.use(responseTime())
 async function longRunningComputation() {
   let i = 0
-  for (i = 0; i < 10000000000; i++) {
+  for (i = 0; i < 1000000000; i++) {
     i++
   }
   return i
